@@ -7,7 +7,7 @@ const App = () => {
     <div className="App">
       <h1>Welcome to Washington DC!</h1>
       <h2>Check out some of DC's most popular museums:</h2>
-    
+      
       <Template />
     </div>
   )
