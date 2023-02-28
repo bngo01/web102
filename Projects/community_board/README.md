@@ -31,7 +31,7 @@ Here's a walkthrough of implemented required features:
 ![](https://github.com/bngo01/web102/blob/main/Projects/community_board/src/assets/walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  ScreenToGif
+<!-- GIF created with ...  ScreenToGif -->
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
