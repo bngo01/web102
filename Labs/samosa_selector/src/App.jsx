@@ -52,6 +52,7 @@ const App = () => {
           <button onClick={buyFullFeast}>1000 samosas</button>
         </div>
       </div>
+      
     </div>
   )
 }
