@@ -11,6 +11,7 @@ const App = () => {
   const buyDoubleStuffed = () => {
     if (count >= 10) {
       setMultiplier(multiplier * 2);
+      setCount(count - 10)
     }
   }
   const buyPartyPack = () => {
@@ -51,7 +52,6 @@ const App = () => {
           <button onClick={buyFullFeast}>1000 samosas</button>
         </div>
       </div>
-
     </div>
   )
 }
