@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-
+![](https://github.com/bngo01/web102/blob/main/Projects/flashcards/walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
