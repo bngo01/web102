@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![](https://github.com/bngo01/web102/blob/main/Projects/community_board/src/assets/walkthrough.gif)
+![](https://github.com/bngo01/web102/blob/main/Projects/01community_board/src/assets/walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 <!-- GIF created with ...  ScreenToGif -->
