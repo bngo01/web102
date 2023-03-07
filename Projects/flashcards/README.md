@@ -2,7 +2,7 @@
 
 Submitted by: Bao Ngo
 
-This web app: **insert description**
+This web app: This web app is a logo quiz in a flashcard format. A logo will be displayed and upon clicking on it, the name of the logo will be revealed.
 
 Time spent: 5 hours spent in total
 
