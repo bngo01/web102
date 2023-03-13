@@ -12,15 +12,19 @@ const Card = (props) => {
     const switchCard = (direction) => {
         if (direction === "Previous") {
             const prevIdx = card.id - 1
-            const prevCard = data[prevIdx]
-            setCard(prevCard)
-            setFront(true)
+            if (prevIdx > (data.length + 1)){
+                const prevCard = data[prevIdx]
+                setCard(prevCard)
+                setFront(true)
+            }
         }
         else if (direction === "Next") {
             const nextIdx = card.id + 1
-            const nextCard = data[nextIdx]
-            setCard(nextCard)
-            setFront(true)
+            if (nextIdx < (data.length - 1)){
+                const nextCard = data[nextIdx]
+                setCard(nextCard)
+                setFront(true)
+            }
         }
         else if (direction === "Random") {
             const randomIdx = Math.floor(Math.random() * (data.length - 1))
