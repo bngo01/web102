@@ -11,21 +11,28 @@ const Card = (props) => {
 
     const switchCard = (direction) => {
         if (direction === "Previous") {
-            const prevIdx = Math.floor(Math.random() * data.length)
+            const prevIdx = card.id - 1
             const prevCard = data[prevIdx]
             setCard(prevCard)
             setFront(true)
         }
         else if (direction === "Next") {
-            const nextIdx = Math.floor(Math.random() * data.length)
+            const nextIdx = card.id + 1
             const nextCard = data[nextIdx]
             setCard(nextCard)
+            setFront(true)
+        }
+        else if (direction === "Random") {
+            const randomIdx = Math.floor(Math.random() * (data.length - 1))
+            const randomCard = data[randomIdx]
+            setCard(randomCard)
             setFront(true)
         }
     }
 
     const getPrevCard = () => switchCard("Previous")
     const getNextCard = () => switchCard("Next")
+    const getRandomCard = () => switchCard("Random")
 
     return (
         <div className="Card">
@@ -42,8 +49,9 @@ const Card = (props) => {
             </div>
 
             <div className="btn">
-                <button onClick={getPrevCard}>Previous</button>
-                <button onClick={getNextCard}>Next</button>
+                <button onClick={getPrevCard}>⬅️</button>
+                <button onClick={getNextCard}>➡️</button>
+                <button onClick={getRandomCard}>Shuffle</button>
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import React from "react"
 import Card from "./Card.jsx"
 import "./Template.css"
 
+import start from "../assets/img/start0.png"
 import spotify_logo1 from "../assets/img/spotify_logo1.png"
 import facebook_logo2 from "../assets/img/facebook_logo2.png"
 import pepsi_logo3 from "../assets/img/pepsi_logo3.png"
@@ -24,23 +25,24 @@ const Template = () => {
 
     const question = "What is this logo?"
     const data = [ 
-        { question : question, answer : "Spotify", img : spotify_logo1, difficulty : "easy"}, 
-        { question : question, answer : "Facebook", img : facebook_logo2, difficulty : "easy"}, 
-        { question : question, answer : "Pepsi", img : pepsi_logo3, difficulty : "easy" }, 
-        { question : question, answer : "Twitter", img : twitter_logo4, difficulty : "easy" }, 
-        { question : question, answer : "Adidas", img : adidas_logo5, difficulty : "easy"},
-        { question : question, answer : "Maserati", img : maserati_logo6, difficulty : "hard" },
-        { question : question, answer : "Audi", img : audi_logo7, difficulty : "medium" },
-        { question : question, answer : "Nestle", img : nestle_logo8, difficulty : "medium" },
-        { question : question, answer : "Cadillac", img : cadillac_logo9, difficulty : "medium" },
-        { question : question, answer : "Lamborghini", img : lamborghini_logo10, difficulty : "easy" },
-        { question : question, answer : "Honda", img : honda_logo11, difficulty : "easy" },
-        { question : question, answer : "Pizza Hut", img : pizza_hut_logo12, difficulty : "easy" },
-        { question : question, answer : "Ikea", img : ikea_logo13, difficulty : "medium" },
-        { question : question, answer : "Thai Airline", img : thai_airline_logo14, difficulty : "hard" },
-        { question : question, answer : "Ubuntu", img : ubuntu_logo15, difficulty : "hard" }, 
-        { question : question, answer : "Altria", img : altria_logo16, difficulty : "hard" }, 
-        { question : question, answer : "Cisco", img : cisco_logo17, difficulty : "hard" } ]
+        { id : 0, question : "Start!", answer : "Press the next arrow to start the flashcards!", img : start}, 
+        { id : 1, question : question, answer : "Spotify", img : spotify_logo1, difficulty : "easy"}, 
+        { id : 2, question : question, answer : "Facebook", img : facebook_logo2, difficulty : "easy"}, 
+        { id : 3, question : question, answer : "Pepsi", img : pepsi_logo3, difficulty : "easy" }, 
+        { id : 4, question : question, answer : "Twitter", img : twitter_logo4, difficulty : "easy" }, 
+        { id : 5, question : question, answer : "Adidas", img : adidas_logo5, difficulty : "easy"},
+        { id : 6, question : question, answer : "Maserati", img : maserati_logo6, difficulty : "hard" },
+        { id : 7, question : question, answer : "Audi", img : audi_logo7, difficulty : "medium" },
+        { id : 8, question : question, answer : "Nestle", img : nestle_logo8, difficulty : "medium" },
+        { id : 9, question : question, answer : "Cadillac", img : cadillac_logo9, difficulty : "medium" },
+        { id : 10, question : question, answer : "Lamborghini", img : lamborghini_logo10, difficulty : "easy" },
+        { id : 11, question : question, answer : "Honda", img : honda_logo11, difficulty : "easy" },
+        { id : 12, question : question, answer : "Pizza Hut", img : pizza_hut_logo12, difficulty : "easy" },
+        { id : 13, question : question, answer : "Ikea", img : ikea_logo13, difficulty : "medium" },
+        { id : 14, question : question, answer : "Thai Airline", img : thai_airline_logo14, difficulty : "hard" },
+        { id : 15, question : question, answer : "Ubuntu", img : ubuntu_logo15, difficulty : "hard" }, 
+        { id : 16, question : question, answer : "Altria", img : altria_logo16, difficulty : "hard" }, 
+        { id : 17, question : question, answer : "Cisco", img : cisco_logo17, difficulty : "hard" } ]
 
 
     return (
@@ -48,7 +50,7 @@ const Template = () => {
             <div className="header">
                 <h2>Welcome to CodePath's Best Logo Quiz!</h2>
                 <h4>Do you know think you know a lot of logos? Test your knowledge here!</h4>
-                <h5>Number of Cards: {data.length}</h5>
+                <h5>Number of Cards: {data.length - 1}</h5>
 
 
             </div>
