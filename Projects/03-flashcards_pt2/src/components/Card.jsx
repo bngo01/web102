@@ -83,6 +83,7 @@ const Card = (props) => {
                 <div className={`card-inner ${isFront == true ? "front" : ""}`}>
                     <div className="card-front">
                         <p><b>{card.question}</b></p>
+                        <p><b>Difficulty: {card.difficulty}</b></p>
                         <img src={card.img} alt="logo image"></img>
                     </div>
                     <div className="card-back">

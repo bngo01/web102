@@ -24,7 +24,7 @@
     border: 1px solid lightgray;
     border-radius: 1.5rem;
     width: 100%;
-    height: 320px;
+    height: 380px;
     transition: transform linear 0.3s;
 }
 .card .card-front {
@@ -54,7 +54,7 @@
 }
 
 .footer {
-    margin-top: 20.5rem;
+    margin-top: 24.5rem;
 }
 
 .prev-next-btn {
