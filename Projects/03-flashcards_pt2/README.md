@@ -31,6 +31,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![](https://github.com/bngo01/web102/blob/main/Projects/03-flashcards_pt2/src/assets/walkthrough_pt2.gif)
+
 <!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 <!-- Replace this with whatever GIF tool you used! -->
