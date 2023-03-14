@@ -53,8 +53,33 @@
     transition-delay: 0s;
 }
 
-.btn {
+.footer {
+    margin-top: 20.5rem;
+}
+
+.prev-next-btn {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin-top: 21.5rem;
+    align-items: center;
+    margin-top: .5rem;
+}
+.shuffle-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+.inactive:hover {
+    transition: none;
+    border: 1px solid transparent;
+    cursor: not-allowed;
+}
+.inactive:focus {
+    transition: none;
+    border: 1px solid transparent;
+    cursor: not-allowed;
 }
