@@ -71,6 +71,14 @@ input {
 .currentScreenshot {
   margin-top: 5%;
 }
+.quota {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  color: black;
+  background-color: gray;
+}
 
 .queryStatusContainer {
   margin-top: 5%;

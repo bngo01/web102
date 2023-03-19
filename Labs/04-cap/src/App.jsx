@@ -14,7 +14,8 @@ function App() {
     height: "",
   })
   const [currentImage, setCurrentImage] = useState(null)
-  const [prevImages, setPrevImages] = useState([]);
+  const [prevImages, setPrevImages] = useState([])
+  const [quota, setQuota] = useState(null)
 
   const reset = () => {
     setInputs({
@@ -37,6 +38,7 @@ function App() {
       setCurrentImage(json.url)
       setPrevImages((images) => [...images, json.url]);
       reset()
+      getQuota()
     }
     // if (json.url == null){
     //   alert("Oops! Something went wrong with that query, let's try again!")
@@ -79,6 +81,13 @@ function App() {
     }
   }
 
+  const getQuota = async () => {
+    const response = await fetch("https://api.apiflash.com/v1/urltoimage/quota?access_key=" + ACCESS_KEY);
+    const result = await response.json();
+
+    setQuota(result);
+  }
+
   return (
     <div className="whole-page">
       <h1>Build Your Own Screenshot! 📸</h1>
@@ -112,6 +121,7 @@ function App() {
       </div>
       <div className="currentScreenshot">
         {currentImage ? (<img className="screenshot" src={currentImage} alt="Screenshot returned"/> ) : (<div> </div>)}
+        {quota ? (<p className="quota">{" "}Remaining API calls: {quota.remaining} out of {quota.limit}</p>) : (<p></p>)}
       </div>
       <br></br>
       <div className="prevScreenshotContainer">
