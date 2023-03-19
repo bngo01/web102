@@ -35,6 +35,12 @@ function App() {
       setCurrentImage(json.url)
       reset()
     }
+    if (json.url == null){
+      alert("Oops! Something went wrong with that query, let's try again!")
+        }
+    else {
+      setCurrentImage(json.url);
+    }
   }
 
   const makeQuery = () => {
