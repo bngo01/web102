@@ -10,8 +10,8 @@ function App() {
     format: "",
     no_ads: "",
     no_cookie_banners: "",
-    width: "100",
-    height: "100",
+    width: "",
+    height: "",
   })
   const [currentImage, setCurrentImage] = useState(null)
   const [prevImages, setPrevImages] = useState([]);
@@ -93,16 +93,7 @@ function App() {
         }
         onSubmit={submitForm}
       />
-      {currentImage ? (
-        <img
-          className="screenshot"
-          src={currentImage}
-          alt="Screenshot returned"
-        />
-      ) : (
-        <div> </div>
-      )}
-      <div className="container">
+      <div className="queryStatusContainer">
         <h3> Current Query Status: </h3>
         <p>
           https://api.apiflash.com/v1/urltoimage?access_key=ACCESS_KEY    
@@ -119,8 +110,11 @@ function App() {
           <br></br>
         </p>
       </div>
+      <div className="currentScreenshot">
+        {currentImage ? (<img className="screenshot" src={currentImage} alt="Screenshot returned"/> ) : (<div> </div>)}
+      </div>
       <br></br>
-      <div className="container">
+      <div className="prevScreenshotContainer">
         <Gallery images={prevImages} />
       </div>
     </div>
