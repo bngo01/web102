@@ -9,7 +9,7 @@ const RecipeChoices = ({handleChange, label, choices, currentVal}) => {
                     name={label}
                     value={currentVal}
                     placeholder="Guess the ingredient..."
-                    onChange={handleChange}
+                    // onChange={handleChange}
                     className = "textbox"
                     />
                 {choices && choices.map((choice) => (
