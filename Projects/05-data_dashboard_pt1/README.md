@@ -2,7 +2,7 @@
 
 Submitted by: Bao Ngo
 
-This web app: **insert description**
+This web app: This dashboard allows you to enter a zipcode and view the current and next 7-day weather forecast based on the zipcode entered. 
 
 Time spent: 7 hours spent in total
 
@@ -39,7 +39,7 @@ Here's a walkthrough of implemented user stories:
 <!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+<!-- GIF created with ...   -->
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
