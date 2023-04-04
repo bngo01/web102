@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<!-- ![]() -->
+![](https://github.com/bngo01/web102/blob/main/Projects/06-data_dashboard_pt2/src/assets/walkthrough.gif)
 
 <!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
