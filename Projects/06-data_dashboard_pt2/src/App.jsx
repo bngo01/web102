@@ -88,6 +88,7 @@ function App() {
       </div>
 
       {brewery.map((i) => {
+        console.log(i)
         return (
           <Link key={i.id} to={`/detail/${i.id}`} 
             state={{

@@ -10,8 +10,8 @@ function Detail({}) {
             <h3>{name}</h3>
             <p>{address}</p>
             <p>Type: {type}</p>
-            <p>Latitude: {latitude ? latitude : ""}</p>
-            <p>Longitude: {longitude ? longitude : ""}</p>
+            <p>Latitude: {latitude ? latitude : "None Provided"}</p>
+            <p>Longitude: {longitude ? longitude : "None Provided"}</p>
             
             <button><a href={website} target="_blank">Website</a></button>
             <button><a href={call}>Phone</a></button>
