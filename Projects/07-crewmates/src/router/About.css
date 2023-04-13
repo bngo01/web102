@@ -1,0 +1,10 @@
+.detail-img {
+    display: flex;
+    background-color: "black";
+    padding: "20px 30px"
+}
+
+.detail-crew-info {
+    padding: 10px 30px;
+    margin-left: 20px;
+}

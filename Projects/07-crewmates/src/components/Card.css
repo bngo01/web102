@@ -1,0 +1,15 @@
+.Card {
+    margin: 1em;
+    padding: 1.5em;
+    width: 150px;
+}
+.Card img {
+    width: 80px;
+}
+.Card .name {
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black;
+}
